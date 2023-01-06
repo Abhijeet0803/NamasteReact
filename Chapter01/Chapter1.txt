@@ -1,0 +1,45 @@
+What is Emmet?
+
+->Emmet is a plugin which helps you to write code faster.
+->It uses css selectors template to write code (HTML Code).
+->Official documentation: https://emmet.io/
+
+● Difference between a Library and Framework?
+
+->Library is a light weight code which you will use it in your code to perform certain tasks.
+->Where as framework calls your code and fit into his code and do the task.
+
+****-> React is a JS library.
+
+● What is CDN? Why do we use it?
+
+->CDN - Content Delivery Network.
+-> It is used to decrease the latency of sending the content to client.
+-> They use distributed and interconnected servers to send cached contents to user
+->Read more here: https://www.techtarget.com/searchnetworking/definition/CDN-content-delivery-network
+● Why is React known as React?
+
+->
+● What is crossorigin in script tag?
+
+->
+
+● What is diference between React and ReactDOM
+
+->React is responsible for creating UI.
+->ReactDOM is responsible for actually rendering the UI in the browser.
+->Read More: https://www.geeksforgeeks.org/how-react-and-reactdom-works/
+
+● What is difference between react.development.js and react.production.js files via CDN?
+
+->Development.js is used for development purpose.
+->Production.js on the other hand, runs in production mode which means this is the code running on your client's machine. The production build runs uglify and builds your source files into one or multiple minimized files. It also extracts CSS and images and of course any other sources you're loading with Webpack. There's also no hot reloading included. Source Maps might be included as separate files depending on your webpack
+
+● What is async and defer? - see my Youtube video ;)
+
+->async and defer are boolean attributes which are used with script tag to load the external code in our code.
+->
+
+->See youtube video: https://www.youtube.com/watch?v=IrHmpdORLu8&ab_channel=AkshaySaini
+
+

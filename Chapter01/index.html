@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Using Basic Html -->
+    <!-- <h1>Hello World!!!</h1> -->
+</body>
+<!-- Importing react and reactDOM using cdn links -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+    /**********using JS and DOM  manipulation*************/
+
+    // const heading = document.createElement("h1");
+    // heading.innerHTML="Hello World!!";
+    // const root = document.getElementById("root");
+    // root.appendChild(heading);
+
+    // If we consider till this line and remove the comments then this is the smallest react code with 
+    // all the powers of React and ReactDOM
+
+    const heading = React.createElement("h1", {},"Hello React!!");
+    const root = ReactDOM.createRoot(document.getElementById("root"));  // WE are telling react that this is my root we have to implement our react code.
+   // root.render(heading);   //here we are telling to insert heading inside react;
+
+    // What ever written inside root will be overriden by this react code. it will not append but overrride the code.
+
+    const styles = {
+    color: "red",
+    background: "#0f0",
+    fontSize: "32px"
+    };
+    const heading2 = React.createElement("h2", {}, "heading2"); 
+    const heading3 = React.createElement("h3", {}, "heading3");
+    const div = React.createElement("div", {
+        id: "header",
+        style:{styles}
+    }, [heading2, heading3]);
+    //whatever written inside {} will go into the properties/attributes of HTML tag
+    root.render(div);
+    //root.render([heading,heading2,heading3]);   // We can write this way also 
+
+    // We can write multiple render functions but whatever written inside last root will be seen in browser.
+
+</script>
+</html>
